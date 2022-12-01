@@ -1,0 +1,7 @@
+<h2>Errors:{{this.getBaralla().errors}}</h2>
+<h5>Temps:{{this.getBaralla().temps}}</h5>
+<div *ngFor="let fila of this.getBaralla().files; let vIndex = index" style="display: flex;">
+  <div *ngFor="let carta of this.getBaralla().files[vIndex]">
+    <app-carta [carta]="carta"></app-carta>
+  </div>
+</div>

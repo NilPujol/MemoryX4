@@ -1,0 +1,7 @@
+<span *ngIf="carta.visible">
+  <img src=".{{this.ruta}}assets/imatges/{{carta.img}}" alt="" width="140px" height="190px">
+</span>
+
+<span *ngIf="!carta.visible" (click)="agafar(carta)">
+  <img src=".{{this.ruta}}assets/imatges/revers.png" alt="" width="140px" height="190px">
+</span>
